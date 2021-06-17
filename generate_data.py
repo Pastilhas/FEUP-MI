@@ -120,7 +120,7 @@ def midi_to_txt(file):
 
     output_filename = TXT_INPUT_DIRECTORY + '/' + file.name[:-4] + '.txt'
     output_file = open(output_filename, 'w+')
-    output_file.write(score_string + "end")
+    output_file.write(score_string + 'end')
     output_file.close()
 
     end_time = time.time()

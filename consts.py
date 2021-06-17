@@ -21,10 +21,10 @@ num_epochs = 9
 input_size = 200
 lr = 0.01
 
-best_loss = float("inf")
+best_loss = float('inf')
 best_model = None
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 ################################################################################
 

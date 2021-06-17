@@ -23,7 +23,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=lr)
 def train(model, trainX, trainY):
   model.train()
   statH, statC = model.init_state(input_size)
-  best_train_loss = float("inf")
+  best_train_loss = float('inf')
 
   for i in range(len(trainX)):
     X, Y = get_batch(trainX, trainY, i)
